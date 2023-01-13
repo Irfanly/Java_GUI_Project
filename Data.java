@@ -12,7 +12,8 @@ public class Data {
     private String roomName;
     private double roomPrice;
     private int totDay;
-
+    private double totPrice;
+    private String[] services = new String[5];
 
     private Data(){}
 
@@ -56,9 +57,57 @@ public class Data {
         }
     }
 
+    public void setServices(int option)
+    {
+        switch (option)
+        {
+            case 1:
+                stringArrayloop(services, "String");
+                break;
+
+            case 2:
+                stringArrayloop(services, "String");
+                break;
+
+            case 3:
+                stringArrayloop(services, "String");
+                break;
+
+            case 4:
+                stringArrayloop(services, "String");
+                break;
+
+            case 5:
+                stringArrayloop(services, "String");
+                break;
+        }
+    }
+
+    public void calcTotPrice()
+    {
+        totPrice = roomPrice*totDay;
+    }
+
+    void stringArrayloop(String [] arrString, String value) {
+        for (int i = 0; i < arrString.length; i++) {
+            if (arrString[i] == null) {
+                arrString[i] = value;
+                break;
+            }
+        }
+    }
+
     public String getCustName() {return custName;}
 
     public String getCustPhone() {return custPhone;}
 
     public int getRoomType() {return roomType;}
+
+    public String getRoomName() {return roomName;}
+
+    public double getRoomPrice() {return roomPrice;}
+
+    public int getTotDay() {return totDay;}
+
+    public double getTotPrice() {return totPrice;}
 }
