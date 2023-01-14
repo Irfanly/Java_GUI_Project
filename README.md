@@ -10,11 +10,11 @@ Disclaimer: The codes are to be run on Jetbrains InteliJ. The steps shown are on
 2. You may name the java file however you like, just keep in mind that the default java class name is "_Hotel\_Management"_and the package name is "_com.example.javaguiproject_". If you to rename the file, remember to change the path name in the java code too.
 3. Make sure these two options is tick. Finish creating javaFx project.
 
-![](RackMultipart20230114-1-i3rr2u_html_1f47d8d63aff37bf.png)
+![](/GitHub_Pics/GitHub1.png)
 
-1. Download the code and copy it into this path. The code should run without any problem.
+4. Download the code and copy it into this path. The code should run without any problem.
 
-![](RackMultipart20230114-1-i3rr2u_html_1e05256602d8b97b.png)
+![](/GitHub_Pics/GitHub2.png)
 
 **METHOD 2**
 
