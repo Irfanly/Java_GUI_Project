@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotelbookingsystem.roomDetailsController">
+   <content>
+      <AnchorPane prefHeight="1075.0" prefWidth="900.0" style="-fx-background-color: FAF8F1;">
+         <children>
+            <AnchorPane layoutX="44.0" layoutY="33.0" prefHeight="289.0" prefWidth="679.0" style="-fx-background-color: FDEEDC;" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+               <children>
+                  <VBox alignment="BOTTOM_CENTER" layoutX="428.0" layoutY="1.0" prefHeight="292.0" prefWidth="250.0" style="-fx-background-color: white;">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="98.0" prefWidth="250.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="55.0" prefWidth="250.0">
+                                 <children>
+                                    <Label text="STANDARD SINGLE ROOM">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" prefHeight="63.0" prefWidth="250.0" spacing="20.0">
+                                 <children>
+                                    <Label text="Room size 21 m²">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="1-single bed " />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <GridPane alignment="BOTTOM_CENTER" prefHeight="113.0" prefWidth="250.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Air-conditioning">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Free Wi-Fi" GridPane.rowIndex="1">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Flat-screen TV" GridPane.rowIndex="2">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Breakfast included" GridPane.rowIndex="3">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="64.0" prefWidth="258.0" spacing="4.0" style="-fx-background-color: E5BA73;">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="214.0" text="RM150 Per night" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="singleRoom" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#displaySingleRoom" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: C58940; -fx-background-radius: 20; -fx-border-radius: 20;" text="VIEW DETAILS" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="10.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="2.0" prefHeight="286.0" prefWidth="428.0" AnchorPane.leftAnchor="1.0">
+                     <children>
+                        <ImageView fitHeight="250.0" fitWidth="380.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../Images/SingleBedroom.jpeg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="40.0" layoutY="746.0" prefHeight="294.0" prefWidth="680.0" style="-fx-background-color: FDEEDC;" AnchorPane.leftAnchor="40.0">
+               <children>
+                  <VBox alignment="BOTTOM_CENTER" layoutX="428.0" layoutY="-1.0" prefHeight="290.0" prefWidth="259.0" style="-fx-background-color: white;">
+                     <children>
+                        <VBox prefHeight="126.0" prefWidth="250.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="55.0" prefWidth="250.0">
+                                 <children>
+                                    <Label text="DELUXE KING ROOM">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" prefHeight="87.0" prefWidth="250.0" spacing="20.0">
+                                 <children>
+                                    <Label text="Room size 150 m²">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="1-King-size bed" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <GridPane alignment="TOP_CENTER" prefHeight="101.0" prefWidth="250.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Air-conditioning and Heating system">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Huge Flat-Screen HDTV " GridPane.rowIndex="1">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="High Speed Wi-Fi" GridPane.rowIndex="2">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Breakfast &amp; Valet Parking Included" GridPane.rowIndex="3">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="64.0" prefWidth="258.0" spacing="5.0" style="-fx-background-color: E5BA73;">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="132.0" text="RM350 Per night" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="kingRoom" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#displayKingRoom" prefHeight="40.0" prefWidth="95.0" style="-fx-background-color: C58940; -fx-background-radius: 20; -fx-border-radius: 20;" text="VIEW DETAILS" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="10.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="286.0" prefWidth="428.0">
+                     <children>
+                        <ImageView fitHeight="250.0" fitWidth="380.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../Images/KingBedroom2.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="226.0" layoutY="392.0" prefHeight="294.0" prefWidth="680.0" style="-fx-background-color: FDEEDC;" AnchorPane.rightAnchor="40.0">
+               <children>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="299.0" prefWidth="250.0" style="-fx-background-color: white;">
+                     <children>
+                        <VBox prefHeight="126.0" prefWidth="250.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="55.0" prefWidth="250.0">
+                                 <children>
+                                    <Label text="STANDARD QUEEN ROOM">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" prefHeight="87.0" prefWidth="250.0" spacing="20.0">
+                                 <children>
+                                    <Label text="Room size 55 m²">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="2-Queen size bed" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <GridPane alignment="TOP_CENTER" prefHeight="101.0" prefWidth="250.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Air-conditioning">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Plasma TV" GridPane.rowIndex="1">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Free Wi-Fi" GridPane.rowIndex="2">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Breakfast &amp; Valet Parking Included" GridPane.rowIndex="3">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="258.0" spacing="5.0" style="-fx-background-color: E5BA73;">
+                           <children>
+                              <Label fx:id="queenRoom" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#displayQueenRoom" prefHeight="40.0" prefWidth="171.0" style="-fx-background-color: C58940; -fx-background-radius: 20; -fx-border-radius: 20;" text="VIEW DETAILS" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="10.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label prefHeight="18.0" prefWidth="214.0" text="RM 230 Per night" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="249.0" layoutY="-3.0" prefHeight="301.0" prefWidth="428.0" AnchorPane.rightAnchor="3.0">
+                     <children>
+                        <ImageView fitHeight="250.0" fitWidth="380.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../Images/DoubleBedroom.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
