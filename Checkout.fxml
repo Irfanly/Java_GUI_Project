@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: FAF8F1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotelbookingsystem.billController">
+   <children>
+      <VBox layoutX="400.0" prefHeight="600.0" prefWidth="508.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="121.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="780.0" style="-fx-background-color: E5BA73;">
+               <children>
+                  <Label text="CHECKOUT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding></HBox>
+            <VBox prefHeight="234.0" prefWidth="618.0">
+               <children>
+                  <Label text="Room Details">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Name:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="roomType" prefHeight="34.0" prefWidth="235.0">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="52.0" text="Room Price:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="roomPrice">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="120.0" text="Night(s) Stay:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="roomDuration">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="169.0" text="Total Price:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="roomTotal">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="234.0" prefWidth="618.0">
+               <children>
+                  <Label text="Customer Details">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="custName" prefHeight="33.0" prefWidth="295.0">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="custIC">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="custNum">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="custEmail">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
